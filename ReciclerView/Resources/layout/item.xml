@@ -1,29 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:orientation="vertical"
+android:gravity="center"
+android:background="@drawable/Stylebtn"
+   android:layout_width="200dp"
+android:layout_marginLeft="15dp"
+   android:layout_height="100dp">
+<TextView
+android:text="Programacion  Algorimica"
+android:textSize="15dp"
+android:textAlignment="center"
+android:textColor="@android:color/white"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:minWidth="25px"
+android:minHeight="25px"
+android:textStyle="bold"
+android:id="@+id/descripciontexto" />
 
-<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="200dp">
-    <LinearLayout
-        android:orientation="vertical"
-       android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/linearLayout1" >
-        <ImageView
-          
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:scaleType="centerCrop"
-           android:layout_weight="1"
-            android:id="@+id/imageView1" />
-        <TextView
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-            android:id="@+id/descripciontexto"
-            android:textColor="#000"
-            android:textSize="20dp"
-            android:gravity="center"/>
-    </LinearLayout>
+<TextView
+android:layout_marginTop="15dp"
+android:text="Lunes - Viernes"
+android:textAlignment="center"
+android:textColor="@android:color/white"
+android:textAppearance="?android:attr/textAppearanceSmall"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:id="@+id/txtDias" />
+<TextView
+android:text="8:00Am - 10:00Am"
+android:textAlignment="center"
+android:textColor="@android:color/white"
+android:textAppearance="?android:attr/textAppearanceSmall"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:id="@+id/txtHoras" />
 
-  
-   
-</android.support.v7.widget.CardView>
+</LinearLayout>

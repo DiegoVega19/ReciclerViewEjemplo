@@ -17,5 +17,9 @@ namespace ReciclerView.Helper
         public int ImageID { get; set; }
         public string Descripcion { get; set; }
 
+        public string Dias { get; set; }
+
+        public string Hora { get; set; }
+
     }
 }

@@ -16,11 +16,14 @@ namespace ReciclerView.Helper
 {
      class RecyclerViewHolder : RecyclerView.ViewHolder
     {
-        public ImageView imageView { get; set; }
+        public TextView txtHoras { get; set; }
+        public TextView txtDia { get; set; }
         public TextView txtDescripcion { get; set; }
         public RecyclerViewHolder(View itemView): base(itemView)
+        
         {
-            imageView = itemView.FindViewById<ImageView>(Resource.Id.imageView1);
+            txtHoras = itemView.FindViewById<TextView>(Resource.Id.txtHoras);
+            txtDia = itemView.FindViewById<TextView>(Resource.Id.txtDias);
             txtDescripcion = itemView.FindViewById<TextView>(Resource.Id.descripciontexto);
         }
     }
@@ -45,9 +48,10 @@ namespace ReciclerView.Helper
         public override void OnBindViewHolder(RecyclerView.ViewHolder holder, int position)
         {
             RecyclerViewHolder viewHolder = holder as RecyclerViewHolder;
-            viewHolder.imageView.SetImageResource(lstdata[position].ImageID);
+
             viewHolder.txtDescripcion.Text = lstdata[position].Descripcion;
-            viewHolder.txtDescripcion.Text = lstdata[position].Descripcion;
+            viewHolder.txtDia.Text = lstdata[position].Dias;
+            viewHolder.txtHoras.Text = lstdata[position].Hora;
         }
 
         public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int viewType)
